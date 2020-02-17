@@ -1,0 +1,255 @@
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
+  color: #222;
+  font-family: arial,sans-serif;
+  font-size: small;
+  position: absolute;
+  min-height: 100%;
+  margin: 0;
+  top: 0;
+  width: 100%;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 3em;
+  padding-top: 0.7em;
+  right: 0.8em;
+}
+
+#header img {
+  width: 2.5em;
+}
+
+#header #header-profile {
+  position: relative;
+  right: 0.8em;
+}
+
+#header a {
+  margin: 1em;
+  color: #222;
+  text-decoration: none;
+}
+
+#header a:hover {
+  text-decoration: underline;
+  opacity: 80%;
+}
+
+#header #header-menu {
+  width: 1.3em;
+  opacity: 50%;
+  position: relative;
+  right: 0.3em;
+}
+
+#header #header-menu:hover {
+  opacity: 100%;
+}
+
+#article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  padding-bottom: 25em;
+}
+
+#article #google-logo {
+  padding-top: 109px;
+}
+
+#article #buttons {
+  margin-top: 1.8em;
+}
+
+#article button {
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5F6368;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#article button:hover {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
+#article button:focus {
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+#article #offeredbyGoogle a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+#article #offeredbyGoogle a:hover {
+  text-decoration: underline;
+}
+
+#searchContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 25px;
+  width: 44em;
+  height: 40px;
+  border: 1px solid #dfe1e5;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+
+#searchContainer:hover {
+  -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+          box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+#searchContainer .searchIcon {
+  opacity: 45%;
+  width: 2.6%;
+  height: 41%;
+  position: relative;
+  top: 12px;
+  left: 15px;
+}
+
+#searchContainer .searchMic {
+  width: 2.3%;
+  height: 50%;
+  position: relative;
+  top: 10px;
+  right: 17px;
+}
+
+#searchContainer .searchMic:hover {
+  cursor: pointer;
+}
+
+#searchContainer #searchBox {
+  border: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  left: 20px;
+}
+
+#searchContainer #searchBox:focus {
+  outline: none;
+}
+
+#footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.54);
+  border-top: 1px solid #e4e4e4;
+}
+
+#footer a {
+  color: rgba(0, 0, 0, 0.637);
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer #country {
+  margin-left: 30px;
+  text-align: left;
+  font-size: 15px;
+  position: relative;
+}
+
+#footer #country p {
+  opacity: 94%;
+  position: relative;
+  bottom: 5px;
+}
+
+#footer #about {
+  margin-bottom: 20px;
+  border-top: 1px solid #e4e4e4;
+  position: relative;
+}
+
+#footer #about a {
+  position: relative;
+  top: 10px;
+}
+
+#footer .right-footer-item {
+  float: right;
+  margin-right: 20px;
+}
+
+@media (max-width: 573px) {
+  #main {
+    display: none;
+  }
+  #not-mobile-yet {
+    display: block;
+    font-size: 70px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

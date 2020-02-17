@@ -1,0 +1,212 @@
+body{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+#main {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    color: #222;
+    font-family: arial,sans-serif;
+    font-size: small;
+    position: absolute;
+    min-height: 100%;
+    margin: 0;
+    top: 0;
+    width: 100%;
+}
+
+#header {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    position: relative;
+    height:3em;
+    padding-top: 0.7em;
+    right:0.8em;
+    img{
+        width:2.5em;
+    }
+    #header-profile {
+        position: relative;
+        right:0.8em;
+    }
+
+    a{
+        margin:1em;
+        color: #222;
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: underline;
+            opacity: 80%;
+        }
+        
+    }
+    #header-menu {
+        width:1.3em;
+        opacity: 50%;
+        position: relative;
+        right:0.3em;
+        &:hover{
+            opacity: 100%;
+        }
+    }
+
+
+   
+
+}
+
+#article { 
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 25em;
+    #google-logo {
+        padding-top: 109px;
+    }
+    #buttons{
+        margin-top:1.8em
+    }
+    button {
+        background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+        background-color: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        color: #5F6368;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+            background-color: #f8f8f8;
+            border: 1px solid #c6c6c6;
+            color: #222;
+        }
+        &:focus {
+            border: 1px solid #4d90fe;
+            outline: none;
+        }
+    }
+    #offeredbyGoogle{
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#searchContainer {
+    display: flex;
+    border-radius: 25px;
+    width:44em;
+    height:40px;
+    border: 1px solid #dfe1e5;
+    overflow: hidden;
+    position:relative;
+    margin-top: 20px;
+    &:hover {
+        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+        border-color: rgba(223,225,229,0);
+    }
+
+    .searchIcon {
+        opacity: 45%;
+        width: 2.6%;
+        height: 41%;
+        position: relative;
+        top: 12px;
+        left: 15px; 
+    }
+    .searchMic{
+        width: 2.3%;
+        height: 50%;
+        position: relative;
+        top:10px;
+        right:17px;
+        &:hover {
+            cursor: pointer;
+        }
+    } 
+    #searchBox {
+        border: 0;
+        flex: 1;
+        position: relative;
+        left:20px;
+        &:focus {
+            outline: none;
+        }
+    }
+}  
+
+
+
+#footer {
+    width:100%;
+    background-color:rgb(242, 242, 242);
+    color:rgba(0,0,0,.54);
+    border-top: 1px solid #e4e4e4;
+
+    a {
+        color:rgba(0, 0, 0, 0.637);
+        text-decoration: none;
+        margin-left:30px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    #country{
+        margin-left: 30px;
+        text-align: left;
+        font-size:15px;
+        position: relative;
+        p {
+            opacity:94%;
+            position: relative;
+            bottom:5px;
+        }
+    }
+    #about{
+        margin-bottom: 20px;
+        border-top: 1px solid #e4e4e4;
+        position: relative;
+        a {
+            position: relative;
+            top:10px;
+        }
+    }
+    .right-footer-item {
+        float:right;
+        margin-right:20px;
+    }
+
+}
+
+
+
+@media(max-width:573px) {
+    #main {
+        display: none;
+    }
+    #not-mobile-yet {
+        display: block;
+        font-size: 70px;
+        text-align: center;
+    }
+}
