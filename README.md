@@ -1,4 +1,4 @@
-# First project in "The Odin Project" about using html, css and the dev tool.
+# First project in "The Odin Project" about the dev tool.
 
 Just reverse enginering google home page style
 
